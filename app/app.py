@@ -26,7 +26,7 @@ if uploaded_file is not None:
     if st.button("🚀 Chạy dự báo"):
         with st.spinner("Đang xử lý và dự báo..."):
             try:
-                forecast_df = run_forecast(df_input, selected_model)
+                forecast_df = run_forecast(selected_model, df_input)
                 st.success("✅ Dự báo hoàn tất!")
 
                 st.subheader("📊 Kết quả dự báo:")
